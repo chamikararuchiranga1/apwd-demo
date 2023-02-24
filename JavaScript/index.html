@@ -3,20 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Java Script</title>
+    <script rel="script" src="index.js"></script>
 </head>
 <body>
 <h1>Java Script</h1>
 <script>
-  console.log("ACPT");
-  console.log("Chamikara Ruchiranga");
-  var x = [];
-  let y = {};
-  const i = "";
-   t = [];
-  //
-  // const result = x+y;
-  //
-  // console.log(t)
+    // Console Log
+    console.log("Chamikara");
+    const myDetails = {name: "chamikara", town: "panadura"};
+    console.log(myDetails);
+
+    // Comment
+    //console.log("ACPT");
+
+    /*console.log("ACPT");
+    console.log("ACPT");
+    console.log("ACPT");*/
+
+    // Variable Types
+    /*var x = "Var";
+    let c = "Let";
+    const v = "Const";*/
+
+    console.log("====================Var=====================")
+    // Var
+    var x;
+    x = 10;
+    var x = 100.00;
+    console.log(x)
+    {x = "Chamikara"
+        var a = 20.00;
+    }
+    console.log(a);
+    console.log(x);
+
+    console.log("====================Let=====================")
+
+    // Let
+    let b;
+    b = 10;
+    // Error
+    // let b = 45.06
+    b = "chamikara"
+    {
+        let s = "ACPT";
+        console.log(s);
+        console.log(b);
+        b = 100.05
+    }
+    // console.log(s)
+    console.log(b);
+
+    console.log("====================Const=====================")
+
+    // Const
+    const r = 55;
+    // const r = 80;
+    // r = 60;
+    {
+        const y = 100.00;
+        console.log(y);
+        console.log(r);
+    }
+    // console.log(y);
+    console.log(r);
+
+    console.log("====================Data Types=====================")
+    // Data types
+
+    //String
+    //Number
+    //Bigint
+    //Boolean
+    //Undefined
+    //Null
+    //Symbol
+    //Object =>>>>  1) An Object, 2) An Array, 3) A Date
+
+    let string = "ACPT";
+    let number = 100.00;
+    let boolean = true;
+    let undefine;
+    let object = {}
+
+    // An Object
+    const person = {name: "chamikara", address: "Panadura"};
+
+    // An Array Object
+    const village = [{name: "chamikara", address: "Panadura"}, {name: "chamikara", address: "Panadura"}]
+    const cls = [100, "Dasun", "KLamala"];
+    const int = [100, "", 102, 103];
+    const date = new Date();
+    console.log(date)
+
+    // If
+    const mark = 70;
+    if(mark > 60){
+        console.log("campus");
+    }
+
+    // Else
+    if(mark > 60){
+        console.log("campus");
+    }else {
+        console.log("Job");
+    }
+
+    // Else If
+    if(mark > 70){
+        console.log("campus");
+    }else if (mark < 70){
+        console.log("job");
+    }else if (mark === 70){
+        console.log("home");
+    }else {
+        console.log("acpt")
+    }
+
+    const childMark = 46
+
+    //75 < childMark => "A"
+    //65 < childMark => "B"
+    //50 < childMark => "C"
+    // "Fail"
+
+    if(75 < childMark){
+        console.log("A");
+    }else if (65 < childMark){
+        console.log("B");
+    }else if (50 < childMark){
+        console.log("C");
+    }else {
+        console.log("Fail");
+    }
+
+
+
 </script>
 </body>
 </html>
