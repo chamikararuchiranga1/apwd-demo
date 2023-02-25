@@ -137,7 +137,128 @@
         console.log("Fail");
     }
 
+    console.log("====================Switch=====================")
+    // Switch
 
+    let i = 2;
+    let result;
+    switch (i) {
+        case 0:
+            result = "off";
+            break;
+        case 1:
+            result = "on";
+            break;
+        default:
+            result = "Not Value...!";
+    }
+    console.log(result);
+
+    ///////////////////
+    // Today
+    console.log(new Date().getDay());
+    // Sunday = 0
+    let today;
+    let day = 66;
+    switch (day){
+        case 0:
+            today = "Sunday";
+            break;
+        case 1:
+            today = "Monday";
+            break;
+        case 2:
+            today = "Tuesday";
+            break;
+        case 3:
+            today = "Wednesday";
+            break;
+        case 4:
+            today = "Thursday";
+            break;
+        case 5:
+            today = "Friday";
+            break;
+        case 6:
+            today = "Saturday";
+            break;
+        default:
+            today = "Error not count Invalid..!";
+    }
+    console.log(today);
+
+    ///////////////////
+    // Week day and Weekend
+    let week;
+    switch (day){
+        case 0:
+        case 6:
+            week = "Today is Weekend..";
+            break;
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            week = "Today is Week day..";
+            break;
+        default:
+            week = "Invalid day..."
+    }
+    console.log(week);
+
+    console.log("====================For=====================")
+    // For
+    console.log("ACPT");
+    console.log("ACPT");
+    console.log("ACPT");
+    console.log("ACPT");
+    console.log("ACPT");
+    console.log("ACPT");
+
+    console.log("=============================");
+
+    for (let d=0; d < 10; d++){
+        console.log("The Number is "+d);
+    }
+
+    const cars = ["BMW", "Audi", "Ford", "Volvo"];
+
+    for (let i=0; i<cars.length; i++){
+        console.log(cars[i]);
+    }
+
+    let q = 0;
+    for (; q<cars.length; ){
+        console.log(cars[q]);
+        q++
+    }
+
+    console.log("=============For In================");
+
+    for (let h in cars){
+        console.log(cars[h]);
+    }
+
+    console.log("=============For Of================");
+
+    for (let j of cars){
+        console.log(j)
+    }
+
+    console.log("=============While================");
+    let k = 0;
+    while (k < cars.length){
+        console.log(cars[k]);
+        k++;
+    }
+
+    let o = 0;
+    do {
+        console.log("APWD");
+        o++
+    }
+    while (o < 0);
 
 </script>
 </body>
