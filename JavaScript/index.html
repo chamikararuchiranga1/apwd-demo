@@ -260,6 +260,50 @@
     }
     while (o < 0);
 
+    console.log("=============Object================");
+
+    var car = {
+        name: "Fait",
+        model: "BMW",
+        stop: function (){
+            console.log("car ===> Stop");
+        }
+    }
+    const person1 = {
+        name: "Chamikara",
+        weight: "55kg",
+        skinColor: "blue",
+        run: function (){
+            console.log("Run")
+        }
+    }
+    console.log(car);
+    console.log(person1.skinColor);
+    console.log(person1["skinColor"]);
+
+    car.weight = "55kg";
+    // car["weight"] = "55kg";
+    console.log(car.weight);
+
+    car.stop();
+
+    person1.run();
+
+    console.log("=============Array================");
+
+    // const array_name = [item1, item2, item3, ......];
+    const persons = ["Kamal", "Nimal", "Susil"];
+
+    console.log(persons[2]);
+
+    const sample = [];
+    sample[0] = "train";
+    sample[1] = "Bus";
+
+    console.log(sample);
+
+
+
 </script>
 </body>
 </html>
