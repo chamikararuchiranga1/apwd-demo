@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+  <script src="event.js"></script>
+    <style>
+        #mouseOver {
+            width: 200px;
+            height: 200px;
+            background-color: #b9b7b7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Event</h1>
+
+<!--On Click-->
+<h3>On Click</h3>
+<button onclick="alert('Click me')">Click me</button>
+<br/><br/>
+<button onclick="document.getElementById('clickLabel').innerHTML = 'Chamikara Ruchiranga'">My Name</button>
+<button onclick="document.getElementById('clickLabel').innerHTML = ''">Remove name</button>
+<h2 id="clickLabel"></h2>
+<br/>
+<br/>
+<button onclick="clickTownEvent()">Click Town</button>
+<h2 id="clickTown"></h2>
+<br/>
+<br/>
+
+<!--On Change-->
+<h3>On Change</h3>
+<input onchange="onChange(this.value)"/>
+<h2 id="onChangeLabel"></h2>
+<br/>
+
+<!--On Mouse Over and Out-->
+<h3>On Mouse Over and Out</h3>
+
+<div id="mouseOver" onmouseover="onMouseOver()" onmouseout="onMouseOut()"></div>
+
+
+<!--On Key up-->
+<h3>On Key up</h3>
+
+<h2 id="onKeyPress"></h2>
+<input onkeyup="onKeyUp(this.value)"/>
+<br/>
+</body>
+</html>
